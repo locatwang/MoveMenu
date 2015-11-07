@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:id="@+id/reContainer"
         >
+
+    <LinearLayout android:id="@+id/bg_logo_image"
+                  android:layout_width="match_parent"
+                  android:layout_height="90dp"
+                  android:background="@drawable/yy_logo"
+                  android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="AKING" android:textStyle="bold" android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
     <TextView
-            android:layout_width="fill_parent"
+            android:id="@+id/help_desc_tv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
+            android:layout_below="@+id/bg_logo_image"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="18dp"
+             android:textColor="@android:color/black"
+            android:text="Aking 出品，如需帮助请联系locatwang@sina.cn"/>
+
+
+    <Button
+            android:id="@+id/btn_hanler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="20dp"
+            android:textColor="#999999"
+            android:background="@null"
+            android:text="OPEN"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:onClick="handleAnimtiontor"
             />
-</LinearLayout>
+
+</RelativeLayout>
 

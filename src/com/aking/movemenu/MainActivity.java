@@ -118,10 +118,7 @@ public class MainActivity extends Activity {
         }
 
         public void onClick(View v) {
-
-            if (!isExpand) {
                 Toast.makeText(MainActivity.this, "click the position:" + position, Toast.LENGTH_SHORT).show();
-            }
         }
     }
 
